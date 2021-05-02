@@ -53,11 +53,9 @@
   width: 1080px;
   align-items: center;
   border-radius: 10px;
-  background-color: #e9fffd;
+  /* background-color: #e9fffd; */
   overflow: visible;
-  box-shadow: -3px 1px 10px -6px #2228;
-  height: 460px;
-  margin: 30px;
+  margin: 10px;
 }
 .printing-content img {
   width: 337px;
@@ -66,7 +64,6 @@
 }
 .printing-content.reverse {
   flex-direction: row-reverse;
-  box-shadow: 3px 1px 10px -6px #2228;
 }
 
 .printing-content.reverse img {
@@ -74,7 +71,15 @@
 }
 
 .printing-content > div {
-  padding: 40px;
+  box-shadow: -3px 1px 10px -6px #2228;
+  margin: 40px -5px 40px 40px;
+  padding: 20px;
+  background: #e9fffd;
+}
+
+.printing-content.reverse > div {
+  box-shadow: 3px 1px 10px -6px #2228;
+  margin: 40px 40px 40px -5px;
 }
 
 .printing-content .content {
