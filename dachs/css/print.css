@@ -1,40 +1,49 @@
-.card-menu{
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-    margin-bottom: 25px;
+.card-menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 25px;
 }
 
-.card-menu>div{
-    width: 270px;
-    margin:12px;
-    border-radius: 12px;
-    padding: 12px;
-    
+.card-menu > div {
+  width: 270px;
+  margin: 12px;
+  border-radius: 12px;
+  padding: 12px;
 }
 
-.card-menu>div:nth-child(1){ background-color: #e9fffd;}
-.card-menu>div:nth-child(2){ background-color: #fff6cf;}
-.card-menu>div:nth-child(3){ background-color: #fff3f2;}
-.card-menu>div:nth-child(4){ background-color: #f0f3ff;}
-
-.card-menu h4{
-    text-align: center;
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.card-menu > div:nth-child(1) {
+  background-color: #e9fffd;
+}
+.card-menu > div:nth-child(2) {
+  background-color: #fff6cf;
+}
+.card-menu > div:nth-child(3) {
+  background-color: #fff3f2;
+}
+.card-menu > div:nth-child(4) {
+  background-color: #f0f3ff;
 }
 
-.card-menu a{
-    text-decoration: none;
-    color: #666;
+.card-menu h4 {
+  text-align: center;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.card-menu li{
-    margin-bottom: 5px;
+.card-menu a {
+  text-decoration: none;
+  color: #666;
 }
 
-#dachsdesign{
-    border-right: 4px solid grey;
+.card-menu li {
+  margin-bottom: 5px;
+}
+
+#dachsdesign {
+  border-right: 4px solid grey;
+  margin-top: 0;
+  margin-left: 0;
 }
