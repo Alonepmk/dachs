@@ -16,6 +16,8 @@
   height: 300px;
   align-self: center;
   margin-top: -150px;
+  box-shadow: 0 12px 25px -10px #2228;
+  margin-bottom: 20px;
 }
 
 .company h2 {
