@@ -25,6 +25,7 @@
       crossorigin="anonymous"
     ></script>
     <link href="css/design.css" rel="stylesheet" />
+    <link href="css/slider.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -93,6 +94,23 @@
             <li>Booklets / Catalogues</li>
             <li>Presentation Folders</li>
           </ul>
+        </div>
+      </div>
+      <div id="slider">
+        <div class="image-wrapper">
+          <img
+            id="display-image"
+            src="images/slider_design_1.PNG"
+            alt="photo1"
+          />
+        </div>
+        <div class="imgs" onclick="showPhoto(event)">
+          <img class="selected" src="images/slider_design_1.PNG" alt="photo1" />
+          <img src="images/slider_design_2.PNG" alt="photo2" />
+          <img src="images/slider_design_3.PNG" alt="photo3" />
+          <img src="images/slider_design_4.PNG" alt="photo4" />
+          <img src="images/slider_design_5.PNG" alt="photo5" />
+          <img src="images/slider_design_6.PNG" alt="photo6" />
         </div>
       </div>
     </div>
@@ -253,7 +271,7 @@
     </section>
 
     <!-----------footer end------------->
-
+    <script src="js/slider.js"></script>
     <script type="text/javascript">
       window.addEventListener("scroll", function () {
         const header = document.querySelector("header");
