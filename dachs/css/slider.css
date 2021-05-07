@@ -14,10 +14,10 @@
 }
 
 #slider .image-wrapper img {
-  max-height: 700px;
-  max-width: 1000px;
-  height: 700px;
-  width: 1000px;
+  max-height: 650px;
+  max-width: 950px;
+  height: 650px;
+  width: 950px;
   object-fit: contain;
 }
 
@@ -42,4 +42,8 @@
   border: 2px solid #00aacc;
   transform: translateY(-10px);
   transition: box-shadow 0.3s, transform 0.3s;
+}
+
+#slider {
+  margin-top: 100px;
 }
