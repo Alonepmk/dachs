@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/contactus.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <form autocomplete="off" action="">
+        <div class="autocomplete" style="width:300px;">
+            <input id="myInput" type="text" name="myCountry" placeholder="Country">
+            <input id="cities" type="text" name="cities" placeholder="Cities">
+        </div>
+        <input type="submit">
+    </form>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/autocomplete_cities.js"></script>
+    <script src="./js/autocomplete_countries.js"></script>
+    <script>
+        $(document).ready(function () {
+            const urlCountries = 'http://localhost:3000/countries';
+            $.ajax({
+                url: urlCountries,
+                type: "GET",
+                success: function (result) {
+                    autocompleteCountries(document.getElementById("myInput"), result);
+                },
+                error: function (error) {
+                    console.log(error)
+                }
+            })
+        })
+
+
+    </script>
+
+</body>
+
+</html>
